@@ -6,7 +6,7 @@
         <li>
             {{ author.name }}
             <a href="{% url 'author_update' author.id %}">Edit</a>
-            <a href="{% url 'author_delete' author.id %}">Delete</a>
+            <a href="{% url 'author_delete' author.id %}">Deleteing</a>
 
             <ul>
                 {% for book in author.books.all %}
